@@ -59,7 +59,7 @@ namespace RestaurantTycoon
             State.Ingredients -= served;
             State.MealsServed += served;
             State.Cash += served * 15;
-            State.Cash -= State.Staff * 10;
+            State.Cash = Math.Max(0, State.Cash - State.Staff * 10);
             State.Reputation = Math.Max(0, Math.Min(100, State.Reputation + (served == demand ? 2 : -3)));
             State.Day++;
             return served;
