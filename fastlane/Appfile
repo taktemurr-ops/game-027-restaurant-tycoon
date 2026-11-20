@@ -1,0 +1,4 @@
+package_name("com.gamestudio100.game_027_restaurant_tycoon")
+app_identifier("com.gamestudio100.game_027_restaurant_tycoon")
+# json_key_file(ENV["PLAY_JSON_KEY"])   # Google Play service account (secret)
+# apple_id(ENV["APPLE_ID"])

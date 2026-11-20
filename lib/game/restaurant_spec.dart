@@ -1,0 +1,38 @@
+import 'tycoon_engine.dart';
+
+const restaurantSpec = TycoonSpec(
+  res: [
+    Res('money', 'Kasa', 'Cash', 0xFFFFD60A),
+    Res('burger', 'Burger', 'Burger', 0xFFB5651D, value: 8),
+    Res('pizza', 'Pizza', 'Pizza', 0xFFE63946, value: 8),
+    Res('salad', 'Salata', 'Salad', 0xFF7BD389, value: 8),
+    Res('coffee', 'Kahve', 'Coffee', 0xFF6F4E37, value: 8),
+  ],
+  blds: [
+    Bld('grill', 'Izgara', 'Grill', 20, make: {1: 0.35}, start: 1, shape: 1, color: 0xFFB5651D),
+    Bld('coffee', 'Kahve makinesi', 'Coffee machine', 25, make: {4: 0.4}, shape: 6, color: 0xFF6F4E37),
+    Bld('salad', 'Salata bar', 'Salad bar', 40, make: {3: 0.35}, shape: 2, color: 0xFF7BD389),
+    Bld('oven', 'Pizza fırını', 'Pizza oven', 60, make: {2: 0.35}, shape: 4, color: 0xFFE63946),
+    Bld('waiter', 'Garson', 'Waiter', 50, staff: 0.4, shape: 0, color: 0xFF8ECAE6),
+    Bld('tables', 'Masalar', 'Tables', 35, attract: 0.08, shape: 5, color: 0xFFDDA15E),
+    Bld('chef', 'Şef', 'Head chef', 300, boost: 0.15, shape: 0, color: 0xFFFFFFFF),
+    Bld('decor', 'Dekorasyon', 'Decor', 350, attract: 0.2, shape: 5, color: 0xFFB5179E),
+    Bld('drive', 'Arabaya servis', 'Drive-thru', 600, staff: 1.5, unlockRes: 0, unlockAt: 800, shape: 5, color: 0xFFF77F00),
+    Bld('kitchen', 'Büyük mutfak', 'Big kitchen', 900, make: {1: 1.2, 2: 1.2, 3: 1.2, 4: 1.2}, unlockRes: 0, unlockAt: 1500, shape: 1, color: 0xFFADB5BD),
+    Bld('ads', 'Reklam', 'Advertising', 1200, attract: 0.45, unlockRes: 0, unlockAt: 2500, shape: 3, color: 0xFF5E60CE),
+    Bld('franchise', 'Şube', 'Franchise', 3000, make: {0: 25}, boost: 0.2, unlockRes: 0, unlockAt: 5000, shape: 5, color: 0xFFFFB703),
+  ],
+  startMoney: 40,
+  customers: true,
+  wants: [1, 2, 3, 4],
+  arrival: 0.45,
+  patience: 20,
+  pay: 9,
+  baseStaff: 0.35,
+  clickMoney: 0.5,
+  goal: TGoal.served,
+  goalTr: 'Servis',
+  goalEn: 'Served',
+  unitTr: 'müşteri',
+  unitEn: 'guests',
+);
