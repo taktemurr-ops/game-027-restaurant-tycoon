@@ -1,19 +1,19 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:game_027_restaurant_tycoon/core/achievements.dart';
-import 'package:game_027_restaurant_tycoon/core/clock.dart';
-import 'package:game_027_restaurant_tycoon/core/collection.dart';
-import 'package:game_027_restaurant_tycoon/core/daily.dart';
-import 'package:game_027_restaurant_tycoon/core/game_rules.dart';
-import 'package:game_027_restaurant_tycoon/core/game_session.dart';
-import 'package:game_027_restaurant_tycoon/core/integrity.dart';
-import 'package:game_027_restaurant_tycoon/core/level_plan.dart';
-import 'package:game_027_restaurant_tycoon/core/missions.dart';
-import 'package:game_027_restaurant_tycoon/core/monetization.dart';
-import 'package:game_027_restaurant_tycoon/core/progression.dart';
-import 'package:game_027_restaurant_tycoon/core/rng.dart';
-import 'package:game_027_restaurant_tycoon/core/save_data.dart';
-import 'package:game_027_restaurant_tycoon/core/save_store.dart';
-import 'package:game_027_restaurant_tycoon/core/telemetry.dart';
+import 'package:studio_core/core/achievements.dart';
+import 'package:studio_core/core/clock.dart';
+import 'package:studio_core/core/collection.dart';
+import 'package:studio_core/core/daily.dart';
+import 'package:studio_core/core/game_rules.dart';
+import 'package:studio_core/core/game_session.dart';
+import 'package:studio_core/core/integrity.dart';
+import 'package:studio_core/core/level_plan.dart';
+import 'package:studio_core/core/missions.dart';
+import 'package:studio_core/core/monetization.dart';
+import 'package:studio_core/core/progression.dart';
+import 'package:studio_core/core/rng.dart';
+import 'package:studio_core/core/save_data.dart';
+import 'package:studio_core/core/save_store.dart';
+import 'package:studio_core/core/telemetry.dart';
 import 'package:game_027_restaurant_tycoon/game/rules.dart';
 
 class _FailingSink implements AnalyticsSink {

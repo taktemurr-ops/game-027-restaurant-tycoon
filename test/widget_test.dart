@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:game_027_restaurant_tycoon/app/app_state.dart';
-import 'package:game_027_restaurant_tycoon/app/bootstrap.dart';
-import 'package:game_027_restaurant_tycoon/app/screens/settings.dart';
-import 'package:game_027_restaurant_tycoon/app/screens/shop.dart';
-import 'package:game_027_restaurant_tycoon/app/services/ads.dart';
-import 'package:game_027_restaurant_tycoon/app/services/audio.dart';
-import 'package:game_027_restaurant_tycoon/app/services/purchases.dart';
-import 'package:game_027_restaurant_tycoon/core/game_session.dart';
-import 'package:game_027_restaurant_tycoon/core/save_store.dart';
-import 'package:game_027_restaurant_tycoon/core/telemetry.dart';
+import 'package:studio_core/app/app_state.dart';
+import 'package:studio_core/app/bootstrap.dart';
+import 'package:studio_core/app/screens/settings.dart';
+import 'package:studio_core/app/screens/shop.dart';
+import 'package:studio_core/app/services/ads.dart';
+import 'package:studio_core/app/services/audio.dart';
+import 'package:studio_core/app/services/purchases.dart';
+import 'package:studio_core/core/game_session.dart';
+import 'package:studio_core/core/save_store.dart';
+import 'package:studio_core/core/telemetry.dart';
 import 'package:game_027_restaurant_tycoon/game/game_config.dart';
 
 Future<AppState> _state({bool onboarded = true}) async {
