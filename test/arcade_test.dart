@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:game_027_restaurant_tycoon/core/arcade.dart';
-import 'package:game_027_restaurant_tycoon/core/level_plan.dart';
+import 'package:studio_core/core/arcade.dart';
+import 'package:studio_core/core/level_plan.dart';
 import 'package:game_027_restaurant_tycoon/game/tycoon_engine.dart';
 import 'package:game_027_restaurant_tycoon/game/rules.dart';
 
